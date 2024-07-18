@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css"  rel="stylesheet" />
+<style>
+    /* This CSS should ideally go into a separate stylesheet or a <style> block in your <head> */
+    input[type="email"],
+    input[type="password"],
+    input[type="text"],
+    input[type="tel"],
+    input[type="file"] {
+        /* Remove default browser outline */
+        outline: none;
+        /* Ensure focus styles are still accessible */
+        border: 0;
+        border-bottom: 2px solid #CBD5E0; /* Replace with your desired border color */
+        background-color: transparent;
+        padding: 0.5rem 0; /* Adjust as needed */
+        transition: border-color 0.2s ease;
+    }
+
+    /* Add focus styles */
+    input[type="email"]:focus,
+    input[type="password"]:focus,
+    input[type="text"]:focus,
+    input[type="tel"]:focus,
+    input[type="file"]:focus {
+        border-color: #4A90E2; /* Adjust to your preferred focus color */
+    }
+</style>
+
+</head>
+<body>
+    
+
+   <form id="signup_form" class="max-w-md mx-auto">
+    <div class="text-center mb-4">
+        <h1 class="text-3xl font-bold">Sign Up</h1>
+    </div>
+    <div class="flex items-center justify-center mb-6">
+        <img class="w-20 h-20 rounded-full ring-2 ring-gray-300 dark:ring-gray-500" src="https://t4.ftcdn.net/jpg/05/89/93/27/360_F_589932782_vQAEAZhHnq1QCGu5ikwrYaQD0Mmurm0N.jpg" alt="Bordered avatar">
+    </div>
+    <div class="mb-4">
+        <label for="avatar" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Choose Avatar</label>
+        <input id="avatar" type="file" class="mt-1 block w-full py-2.5 px-4 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:border-blue-600 focus:ring-0">
+    </div>
+    <div class="mb-4 relative z-0">
+        <input type="email" name="email" id="email" class="block w-full py-2.5 px-4 text-sm text-gray-900 bg-transparent border-b-2 border-gray-300 dark:text-white dark:border-gray-600 focus:outline-none focus:border-blue-600" placeholder=" ">
+        <label for="email" class="absolute left-4 -top-2.5 text-xs text-gray-500 dark:text-gray-400 bg-white dark:bg-gray-900 px-1">Email Address</label>
+    </div>
+    <div class="mb-4 relative z-0">
+        <input type="password" name="password" id="password" class="block w-full py-2.5 px-4 text-sm text-gray-900 bg-transparent border-b-2 border-gray-300 dark:text-white dark:border-gray-600 focus:outline-none focus:border-blue-600" placeholder=" ">
+        <label for="password" class="absolute left-4 -top-2.5 text-xs text-gray-500 dark:text-gray-400 bg-white dark:bg-gray-900 px-1">Password</label>
+    </div>
+   
+    <div class="grid grid-cols-2 gap-6 mb-4">
+        <div class="relative z-0">
+            <input type="text" name="first_name" id="first_name" class="block w-full py-2.5 px-4 text-sm text-gray-900 bg-transparent border-b-2 border-gray-300 dark:text-white dark:border-gray-600 focus:outline-none focus:border-blue-600" placeholder=" ">
+            <label for="first_name" class="absolute left-4 -top-2.5 text-xs text-gray-500 dark:text-gray-400 bg-white dark:bg-gray-900 px-1">First Name</label>
+        </div>
+        <div class="relative z-0">
+            <input type="text" name="last_name" id="last_name" class="block w-full py-2.5 px-4 text-sm text-gray-900 bg-transparent border-b-2 border-gray-300 dark:text-white dark:border-gray-600 focus:outline-none focus:border-blue-600" placeholder=" ">
+            <label for="last_name" class="absolute left-4 -top-2.5 text-xs text-gray-500 dark:text-gray-400 bg-white dark:bg-gray-900 px-1">Last Name</label>
+        </div>
+    </div>
+   
+        <div class="relative z-0">
+            <input type="text" name="company" id="company" class="block w-full py-2.5 px-4 text-sm text-gray-900 bg-transparent border-b-2 border-gray-300 dark:text-white dark:border-gray-600 focus:outline-none focus:border-blue-600" placeholder=" ">
+            <label for="company" class="absolute left-4 -top-2.5 text-xs text-gray-500 dark:text-gray-400 bg-white dark:bg-gray-900 px-1">Company (Ex. Google)</label>
+        </div>
+    </div>
+    <br>
+    <a  href="../login/index.html"><span style="text-decoration: underline;"> Already have an account</span></a>
+
+    <div>
+    <button type="submit" class="w-full py-2.5 px-5 text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:bg-blue-800 rounded-lg mt-7 text-sm font-medium" id="signup_btn">signUp</button>
+</div>
+</form>
+  
+  <script type="module" src="./app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+</body>
+</html>
