@@ -1,0 +1,33 @@
+.product-grid {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    background-color: #f9f9f9;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.product-card {
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    width: 250px;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    width: 200px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.product-card h3 {
+    font-size: 1rem;
+    margin: 10px 0;
+}
